@@ -20,7 +20,7 @@ namespace Challenge.Data.Context
         }
         public IMongoCollection<TEntity> GetCollection<TEntity>()
         {
-            return _db.GetCollection<TEntity>("Users");
+            return _db.GetCollection<TEntity>("ChallengeUser");
         }
         public IMongoDatabase GetDatabase()
         {

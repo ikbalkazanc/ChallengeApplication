@@ -26,7 +26,6 @@ namespace Challenge.API.Extensions
                     ValidIssuer = tokenOptions.Issuer,
                     ValidAudience = tokenOptions.Audience[0],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenOptions.SecurityKey)),
-
                     ValidateIssuerSigningKey = true,
                     ValidateAudience = true,
                     ValidateIssuer = true,
